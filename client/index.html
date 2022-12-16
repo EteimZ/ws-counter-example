@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <title>WebSocket demo</title>
+	 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+         <link href="./counter.css" rel="stylesheet">
+     </head>
+     <body>
+       <div id="app">
+         <div class="buttons">
+           <div class="minus button" @click="decrement">-</div>
+	   <div class="value">{{ value }}</div>
+           <div class="plus button" @click="increment">+</div>
+         </div>
+         <div class="state">
+	   <span class="users">{{ users }}</span> online
+         </div>
+       </div>
+       <script src="./counter.js"></script>
+    </body>
+</html>
